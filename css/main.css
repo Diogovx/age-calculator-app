@@ -55,7 +55,7 @@ main{
     color: var(--smokey-grey);
 }
 .input-block input{
-    width: 65%;
+    width: 85%;
     padding: 0.8rem;
     font-size: 16px;
     border-radius: 0.6rem;
@@ -73,11 +73,14 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.2s ease;
 }
 button img{
     height: 2rem;
 }
-
+button:hover{
+    background-color: var(--off-black);
+}
 .bottom{
     width: 100%;
     display: flex;
@@ -90,5 +93,49 @@ button img{
 .bottom span{
     color: var(--purple-primary);
 }
+.input-block small{
+    display: block;
+}
+.input-block .error{
+    color: var(--light-red);
+    visibility: visible;
+}
+.input-block .errorInput{
+    border: solid 1px var(--light-red);
+}
+.input-block small{
+    visibility: hidden;
+    font-style: italic;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width: 1440px){
+    :root{
+        font-size: 16px;
+    }
+    main{
+        border-radius: 1.5rem 1.5rem 10rem 1.5rem;
+    }
+    .top{
+        grid-template-columns: 20% 20% 20%;
+        padding-bottom: 2rem;
+    }
+    .input-block input{
+        width: 80%;
+    }
+    button{
+        align-self: flex-end;
+        position: absolute;
+        top: 11.5rem;
+    }
+    button img{
+        height: 3rem;
+    }
+    .bottom{
+        font-size: 5rem;
+    }
+    .bottom .months{
+        line-height: 4rem;
+    }
+}

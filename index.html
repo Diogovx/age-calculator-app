@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="css/main.css">
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-  <script src="js/main.js" defer></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <main>
-    <div class="top">
-      <div class="input-block">
-        <label for="day">Day</label>
-        <input type="tel" maxlength="2" name="day" id="day" placeholder="DD">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="top">
+        <div class="input-block">
+          <label for="day" id="label-day">Day</label>
+          <input type="number" max="31" name="day" id="day" placeholder="DD" />
+          <small></small>
+        </div>
+
+        <div class="input-block">
+          <label for="month">Month</label>
+          <input
+            type="number"
+            max="12"
+            name="month"
+            id="month"
+            placeholder="MM"
+          />
+          <small></small>
+        </div>
+
+        <div class="input-block">
+          <label for="year" id="label-year">Year</label>
+          <input type="number" name="year" id="year" placeholder="YYYY" />
+          <small></small>
+        </div>
       </div>
-    
-      <div class="input-block">
-        <label for="month">Month</label>
-        <input type="tel" maxlength="2" name="month" id="month" placeholder="MM">
+      <button id="button">
+        <img src="assets/images/icon-arrow.svg" alt="arrow-bottom" />
+      </button>
+      <div class="bottom">
+        <p class="years"><span id="span-years">--</span> years</p>
+        <p class="months"><span id="span-months">--</span> months</p>
+        <p class="days"><span id="span-days">--</span> days</p>
       </div>
-    
-      <div class="input-block">
-        <label for="year">Year</label>
-        <input type="tel" maxlength="4" name="year" id="year" placeholder="YYYY">
-      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Diogo Velozo Xavier</a>.
     </div>
-    <button><img src="assets/images/icon-arrow.svg" alt="arrow-bottom"></button>
-    <div class="bottom">
-      <p class="years"><span>--</span> years</p>
-      <p class="months"><span>--</span> months</p>
-      <p class="days"><span>--</span> days</p>
-    </div>
-  </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Diogo Velozo Xavier</a>.
-  </div>
-</body>
+  </body>
 </html>
