@@ -54,6 +54,5 @@ This challenge was very important to me to learn more about the Date objects and
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@DiogovX](https://www.frontendmentor.io/profile/Diogovx)
+- Twitter - [@DiogovX_](https://www.twitter.com/Diogovx_)
